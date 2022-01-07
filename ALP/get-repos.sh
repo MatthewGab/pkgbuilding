@@ -7,7 +7,7 @@ c_blue="\033[1;34m"
 c_reset="\033[0m"
 
 # Github Personal Token
-_token="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"
+_token=""
 _url="https://dgcrepotool:${_token}@github.com/DamianoGlobal"
 
 # DGnet Arch Linux Package Repositories
