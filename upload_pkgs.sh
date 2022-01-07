@@ -1,6 +1,11 @@
 #!/bin/bash
 
-user="matthewgabriel@pkgserver"
+if [[ ! -n "$1" ]]; then
+    echo "No specified username"
+    exit 1
+fi
+
+user="$1@pkgserver"
 path="/mnt/packages_scrapped/archlinux/synergy/os/x86_64/"
 
 # create repo db files
