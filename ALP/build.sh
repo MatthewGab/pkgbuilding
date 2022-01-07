@@ -15,7 +15,8 @@ for i in ./*/; do
             --skippgpcheck \
             --syncdeps \
             --force \
-            --clean ;
+            --clean \
+            --noconfirm ; 
     
     mv *.pkg.tar.zst ../../synergy/os/x86_64/)
 done
