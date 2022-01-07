@@ -12,15 +12,16 @@ _url="https://dgcrepotool:${_token}@github.com/DamianoGlobal"
 
 # DGnet Arch Linux Package Repositories
 declare -a repositories=(
-DGnet_ALP_ID20
-DGnet_ALP_ID37
+ID20
+ID37
+ID43
 )
 
 # Clones everything in the repositories list 
 for repo in ${repositories[@]}; do
-    if [[ ! -d "$repo" ]]; then
-        git clone ${_url}/${repo}
+    if [[ ! -d "DGnet_ALP_$repo" ]]; then
+        git clone ${_url}"/DGnet_ALP_"${repo}
     else
-        printf "${c_red}$repo already cloned.${c_reset}\n"
+        printf "${c_red}DGnet_ALP_$repo already cloned.${c_reset}\n"
     fi
 done
