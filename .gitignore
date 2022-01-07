@@ -6,9 +6,7 @@
 *.files.tar.gz
 
 # ALPs
-DGnet_ALP_ID20/
-DGnet_ALP_ID37/
+DGnet_ALP_*/
 
 # Programs
-DGnet_Program_ID20/
-DGnet_Program_ID37/
+DGnet_Program_*/
