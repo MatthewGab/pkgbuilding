@@ -1,0 +1,14 @@
+# Package related
+*.pkg.tar.zst
+*.db
+*.files
+*.db.tar.gz
+*.files.tar.gz
+
+# ALPs
+DGnet_ALP_ID20/
+DGnet_ALP_ID37/
+
+# Programs
+DGnet_Program_ID20/
+DGnet_Program_ID37/
