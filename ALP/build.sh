@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # create path if not exists
-synergy_pkg_path="synergy/os/x86_64"
-if [[ ! -d "../$synergy_pkg_path" ]]; then
-    mkdir -p "../$synergy_pkg_path"
+repo_pkg_path="repo/os/x86_64"
+if [[ ! -d "../$repo_pkg_path" ]]; then
+    mkdir -p "../$repo_pkg_path"
 fi
 
 for i in ./*/; do 
@@ -18,5 +18,5 @@ for i in ./*/; do
             --clean \
             --noconfirm ; 
     
-    mv *.pkg.tar.zst ../../synergy/os/x86_64/)
+    mv *.pkg.tar.zst ../../${repo_pkg_path})
 done
