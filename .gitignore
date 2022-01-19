@@ -5,6 +5,9 @@
 *.db.tar.gz
 *.files.tar.gz
 
+# generated repo
+repo/
+
 # ALPs
 DGnet_ALP_*/
 
