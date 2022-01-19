@@ -25,5 +25,9 @@ read -p "Compressing the whl directory. Enter a name for it: " name
 (mv ./whl ./${name}; tar -czvf ./${name}.tar.gz ./${name})
 
 # move compressed files to repo/libs
-libs_path="../repo/libs"
+libs_path="repo/libs"
+if [[ ! -d "../$libs_path" ]]; then
+    mkdir -p "../$libs_path"
+fi
+
 mv ./*.tar.gz ${libs_path}
