@@ -31,4 +31,4 @@ if [[ ! -d "../$libs_path" ]]; then
     mkdir -p "../$libs_path"
 fi
 
-mv ./*.tar.gz ${libs_path}
+mv ./*.tar.gz ../${libs_path}
