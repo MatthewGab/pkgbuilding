@@ -14,14 +14,17 @@ _url="https://dgcrepotool:${_token}@github.com/DamianoGlobal"
 declare -a repositories=(
 ID20
 ID37
+ID4
 ID43
+PRD4
+pyarmor_regfile
 )
 
-# Clones everything in the repositories list 
+# Clones Repositories in the IDs list 
 for repo in ${repositories[@]}; do
-    if [[ ! -d "DGnet_ALP_$repo" ]]; then
+    if [[ ! -d "DGnet_ALP_${repo}" ]]; then
         git clone ${_url}"/DGnet_ALP_"${repo}
     else
-        printf "${c_red}DGnet_ALP_$repo already cloned.${c_reset}\n"
+        printf "${c_red}DGnet_ALP_${repo} already cloned.${c_reset}\n"
     fi
 done
