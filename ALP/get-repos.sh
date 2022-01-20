@@ -12,10 +12,12 @@ _url="https://dgcrepotool:${_token}@github.com/DamianoGlobal"
 
 # DGnet Arch Linux Package Repositories
 declare -a repositories=(
+ID19
 ID20
 ID37
 ID4
 ID43
+KivyDG
 PRD4
 pyarmor_regfile
 )
