@@ -7,7 +7,7 @@ c_blue="\033[1;34m"
 c_reset="\033[0m"
 
 # Github Personal Token
-_token="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"
+_token=""
 _url="https://dgcrepotool:$_token@github.com/DamianoGlobal"
 
 # DGnet Product Repositories
