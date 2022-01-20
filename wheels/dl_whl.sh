@@ -23,7 +23,7 @@ rm -rf ./venv
 # Compress the whl directory
 printf "\n"
 read -p "Compressing the whl directory. Enter a name for it: " name
-(mv ./whl ./${name}; tar -czvf ./${name}.tar.gz ./${name})
+(mv ./whl ./${name}; tar -czvf ./${name}.tar.gz ./${name}; rm -rf ./${name})
 
 # move compressed files to repo/libs
 libs_path="repo/libs"
