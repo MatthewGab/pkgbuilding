@@ -14,6 +14,7 @@ fi
 
 for i in ./DGnet_ALP_*/; do
 
+    #clear
     if [[ -f ${i}"/PKGBUILD" ]]; then
         (printf "\n\n${c_green}$(basename "$i" | sed 's/DGnet_ALP_//g')${c_reset}\n"
 
@@ -21,7 +22,8 @@ for i in ./DGnet_ALP_*/; do
         cd "$i" ;
     
         #git checkout dev-stable &&
-        git pull ;
+        #git status &&
+	git pull ;
 
         makepkg --skipinteg \
                 --skipchecksums \
@@ -32,6 +34,7 @@ for i in ./DGnet_ALP_*/; do
                 --noconfirm ;
 
         mv *.pkg.tar.zst ../../${repo_pkg_path})
+	#sleep 5
     else
 
       printf "\n\n${c_red}[!] No PKGBUILD file found in $(basename "$i")${c_reset}\n"
