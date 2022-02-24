@@ -8,8 +8,7 @@
 # generated repo
 repo/
 
-# ALPs
-DGnet_ALP_*/
+# DGnet Folders 
+DGnet*
 
-# Programs
-DGnet_Program_*/
+testing*
