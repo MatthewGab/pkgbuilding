@@ -15,11 +15,11 @@ declare -a repositories=(
 ID19
 ID20
 ID37
-ID4
+#ID4
 ID43
-KivyDG
+#KivyDG
 PRD4
-pyarmor_regfile
+#pyarmor_regfile
 )
 
 # Clones Repositories in the IDs list 
