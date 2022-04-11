@@ -12,6 +12,12 @@ if [[ ! -d "../$repo_pkg_path" ]]; then
     mkdir -p "../$repo_pkg_path"
 fi
 
+echo ""
+echo "######################################"
+echo "##### Building DGnet Packages... #####"
+echo "######################################"
+echo ""
+
 for i in ./DGnet_ALP_*/; do
 
     #clear

@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+clear
 ALP=$(pwd)"/ALP"
 AUR=$(pwd)"/3rdparty"
 
