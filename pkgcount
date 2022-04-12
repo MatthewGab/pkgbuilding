@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ALP=$(find ./ALP/ -type f -name "PKGBUILD" | wc -l)
+AUR=$(cat ./3rdparty/aurpackages | wc -l)
+_total=$(expr ${ALP} + ${AUR})
+_repo=$(find ./repo/os/x86_64/ -type f -name "*.pkg.tar.zst" | wc -l)
+
+[ "$_total" -eq "$_repo" ]; echo "$?"
